@@ -1,0 +1,167 @@
+@import "variables";
+@import "reset";
+
+nav {
+  position: fixed;
+  background-color: $primary-color;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  height: 4rem;
+  margin: 0 auto;
+}
+
+.padding-container {
+  width: 100%;
+}
+
+#brand {
+  width: 65px;
+  height: 100%;
+  background-color: #3bac6e;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  margin-left: 1rem;
+}
+
+.menu-list {
+  display: none;
+}
+
+.menu-icon {
+  position: relative;
+  height: 100%;
+  width: 40px;
+  display: inline-block;
+  margin-right: 1rem;
+  z-index: 100;
+}
+
+.menu-line1 {
+  position: fixed;
+  top: 1.7rem;
+  width: 40px;
+  height: 4px;
+  background-color: #ffffff;
+  border-radius: 25px;
+}
+
+.menu-line2 {
+  position: fixed;
+  top: 2.2rem;
+  width: 40px;
+  height: 4px;
+  background-color: #ffffff;
+  border-radius: 25px;
+}
+
+// .menu-line::after {
+//   content: "";
+//   position: absolute;
+//   margin-top: 12px;
+//   width: 40px;
+//   height: 4px;
+//   background-color: #fff;
+//   border-radius: 25px;
+// }
+
+.slidein-menu {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: $primary-color;
+  z-index: 0;
+  transform: translateX(100%);
+}
+
+.slidein-menu ul {
+  position: absolute;
+  text-align: right;
+  list-style-type: none;
+  right: 2rem;
+  top: 6rem;
+}
+
+.slidein-menu ul li {
+  font-size: 2rem;
+  color: #fff;
+  margin-top: 2rem;
+}
+
+.landing {
+  position: relative;
+  width: 100%;
+  background-color: $primary-color;
+  z-index: -3;
+  margin-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+.wrapper {
+  padding: 0rem 2rem;
+}
+
+.landing h2 {
+  position: relative;
+  font-size: 3rem;
+  padding-top: 50px;
+  padding-bottom: 1rem;
+  color: #fff;
+  text-align: center;
+}
+
+.landing span {
+  display: block;
+  color: #fff;
+  font-weight: 100;
+  font-size: 24px;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.landing p {
+  color: #fff;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.landing button {
+  all: unset;
+  display: block;
+  background: linear-gradient(#9aedde, $primary-color);
+  -webkit-text-fill-color: #fff;
+  box-shadow: 0px 6px 18px -7px;
+  border-radius: 15px;
+  padding: 13px;
+  margin: 0 auto;
+}
+
+.whoweare {
+  margin-top: 4rem;
+  color: #6f6f6f;
+}
+
+.whoweare h2 {
+  text-align: center;
+  color: $secondary-color;
+}
+
+.whoweare p {
+  text-align: center;
+  padding-top: 2rem;
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+.whoweare .pairprogramming {
+  display: block;
+  height: 200px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 4rem;
+}
