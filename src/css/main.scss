@@ -143,15 +143,34 @@ nav {
 
 .whoweare p {
   text-align: center;
-  padding-top: 2rem;
+  padding-top: 3rem;
   font-size: 1.2rem;
   font-weight: 200;
 }
 
 .whoweare .pairprogramming {
   display: block;
-  height: 200px;
-  width: 100%;
+  height: 100%;
+  width: 20rem;
   margin: 0 auto;
-  margin-top: 4rem;
+  margin-top: 5rem;
+}
+
+.ceoquote {
+  margin-top: 8rem;
+}
+
+.ceoquote .quote {
+  display: block;
+  margin: 0 auto;
+  fill: $primary-color;
+  width: 80px;
+}
+
+.ceoquote span {
+  display: block;
+  text-align: center;
+  padding-top: 2rem;
+  font-size: 1.5rem;
+  font-weight: 200;
 }
