@@ -7,6 +7,7 @@ nav {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 2;
 }
 
 .nav-container {
@@ -14,6 +15,7 @@ nav {
   justify-content: space-between;
   height: 4rem;
   margin: 0 auto;
+  z-index: 2;
 }
 
 .padding-container {
@@ -36,7 +38,7 @@ nav {
   width: 40px;
   display: inline-block;
   margin-right: 1rem;
-  z-index: 100;
+  z-index: 10;
 }
 
 .menu-line1 {
@@ -62,7 +64,7 @@ nav {
   height: 100%;
   width: 100%;
   background-color: $primary-color;
-  z-index: 0;
+  z-index: 2;
   transform: translateX(100%);
 }
 
@@ -76,21 +78,33 @@ nav {
 
 .slidein-menu ul li {
   font-size: 2rem;
-  color: #fff;
   margin-top: 2rem;
+}
+
+.slidein-menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.5s;
+  &:hover {
+    color: $secondary-color;
+  }
 }
 
 .landing {
   position: relative;
   width: 100%;
   background-color: $primary-color;
-  z-index: -3;
+  z-index: 1;
   margin-top: 4rem;
   padding-bottom: 2rem;
 }
 
 .wrapper {
   padding: 0rem 2rem;
+}
+
+.wrapper-half {
+  padding: 0rem 0.5rem;
 }
 
 .landing h2 {
@@ -117,16 +131,24 @@ nav {
   padding-bottom: 2rem;
 }
 
-.landing button {
-  all: unset;
-  display: block;
+.landing .btn {
+  text-align: center;
+}
+
+.btnlink:hover {
+  cursor: pointer;
+  transform: scale(1.06);
+}
+
+.landing .btnlink {
+  display: inline-flex;
   background: linear-gradient(#9aedde, $primary-color);
   -webkit-text-fill-color: #fff;
-  box-shadow: 0px 6px 18px -7px;
+  box-shadow: 0px 6px 18px -7px #333;
   border-radius: 15px;
   padding: 13px;
-  margin: 0 auto;
-  cursor: pointer;
+  transition: 0.5s;
+  text-decoration: none;
 }
 
 .whoweare {
@@ -263,11 +285,11 @@ nav {
 .quotes .quotecontainer {
   position: relative;
   height: 180px;
-  max-width: 500px;
+  max-width: 400px;
   width: 100%;
   border-radius: 15px;
   background-color: #7bddc9cd;
-  margin-top: 2rem;
+  margin-bottom: 2rem;
   z-index: -1;
 }
 
@@ -281,8 +303,8 @@ nav {
 
 .quotes p {
   position: relative;
-  padding: 2rem;
-  top: 30px;
+  padding: 3rem;
+  top: 20px;
   color: #fff;
   // padding: 65px 1rem;
 }
@@ -304,4 +326,51 @@ nav {
   bottom: 22px;
   right: 70px;
   color: #fff;
+}
+
+.top-footer {
+  background-color: $secondary-color;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-container ul {
+  flex: 40%;
+  list-style-type: none;
+  color: $primary-color;
+  font-weight: 100;
+  font-size: 14px;
+}
+
+.footer-container ul li {
+  margin-bottom: 1rem;
+}
+
+.footer-container ul li:first-child {
+  margin-top: 2rem;
+}
+
+.bottom-footer {
+  background-color: $primary-color;
+  padding: 1rem 0;
+}
+
+.bottom-footer ul {
+  color: #fff;
+  font-weight: 100;
+  font-size: 14px;
+  list-style-type: none;
+}
+
+.bottom-footer ul li {
+  margin-bottom: 0.5rem;
+}
+
+.bottom-footer ul li:first-child {
+  margin-bottom: 1rem;
 }
