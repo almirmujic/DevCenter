@@ -21,12 +21,9 @@ nav {
 }
 
 #brand {
-  width: 65px;
+  width: 175px;
   height: 100%;
-  background-color: #3bac6e;
-  border-radius: 50%;
-  border: 1px solid #fff;
-  margin-left: 1rem;
+  margin-left: 0.5rem;
 }
 
 .menu-list {
@@ -129,6 +126,7 @@ nav {
   border-radius: 15px;
   padding: 13px;
   margin: 0 auto;
+  cursor: pointer;
 }
 
 .whoweare {
@@ -150,8 +148,8 @@ nav {
 
 .whoweare .pairprogramming {
   display: block;
-  height: 100%;
-  width: 20rem;
+  height: 200px;
+  width: 100%;
   margin: 0 auto;
   margin-top: 5rem;
 }
@@ -173,4 +171,137 @@ nav {
   padding-top: 2rem;
   font-size: 1.5rem;
   font-weight: 200;
+}
+
+.ceoquote span::after {
+  content: "- author, CEO";
+  display: block;
+  font-size: 1.1rem;
+  text-align: right;
+  padding-top: 1rem;
+  padding-right: 2rem;
+  font-style: italic;
+}
+
+.partners {
+  margin-top: 8rem;
+  background-color: $primary-color;
+  color: #fff;
+  padding-bottom: 4rem;
+}
+
+.partners h2 {
+  display: block;
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 3rem;
+}
+
+.partners .brands {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.partners .pepsico {
+  width: 46%;
+}
+
+.partners .amazon {
+  height: 100px;
+  width: 46%;
+  fill: #fff;
+}
+
+.partners .paypal {
+  width: 46%;
+  fill: #fff;
+  height: 90px;
+  margin-top: 3rem;
+}
+
+.partners .chase {
+  width: 46%;
+  margin-top: 4rem;
+}
+
+.partners .hulu {
+  width: 46%;
+  margin-top: 3rem;
+}
+
+.partners .toyota {
+  width: 46%;
+  margin-top: 4rem;
+}
+
+.partners .ge {
+  width: 46%;
+  margin-top: 4rem;
+}
+
+.partners .apple {
+  width: 46%;
+  height: 120px;
+  fill: #fff;
+  margin-top: 3rem;
+}
+
+.quotes {
+  margin: 4rem 0;
+}
+
+.quotes .quoteflex {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.quotes .quotecontainer {
+  position: relative;
+  height: 180px;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 15px;
+  background-color: #7bddc9cd;
+  margin-top: 2rem;
+  z-index: -1;
+}
+
+.quotes .profile-quote {
+  position: absolute;
+  fill: $secondary-color;
+  height: 40px;
+  left: 0.5rem;
+  top: 0.5rem;
+}
+
+.quotes p {
+  position: relative;
+  padding: 2rem;
+  top: 30px;
+  color: #fff;
+  // padding: 65px 1rem;
+}
+
+.quotes .quotecontainer .profile-img {
+  position: absolute;
+  bottom: 10px;
+  right: 1rem;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid #fff;
+}
+
+.quotes .quotecontainer .profile-name {
+  position: absolute;
+  font-size: 14px;
+  bottom: 22px;
+  right: 70px;
+  color: #fff;
 }
