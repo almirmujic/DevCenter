@@ -25,11 +25,13 @@ function mobileSlideIn() {
     menuLine2.style.backgroundColor = "red";
     menuLine1.style.transition = ".3s ease-in";
     menuLine2.style.transition = ".3s ease-in";
+    document.querySelector("body").style.overflow = "hidden";
   } else {
     sideMenu.style.transform = "translateX(100%)";
     menuLine1.style.backgroundColor = "#fff";
     menuLine2.style.backgroundColor = "#fff";
     menuLine1.style.transform = "rotate(0deg)";
     menuLine2.style.transform = "rotate(0deg)";
+    document.querySelector("body").style.overflow = "unset";
   }
 }
