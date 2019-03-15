@@ -1,94 +1,22 @@
 @import "variables";
 @import "reset";
+@import "navigation";
 
-nav {
-  position: fixed;
-  background-color: $primary-color;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 2;
+/*  ============================
+PADDING WRAPPERS THROUGHOUT SITE
+==============================*/
+
+.wrapper {
+  padding: 0rem 2rem;
 }
 
-.nav-container {
-  display: flex;
-  justify-content: space-between;
-  height: 4rem;
-  margin: 0 auto;
-  z-index: 2;
+.wrapper-half {
+  padding: 0rem 0.5rem;
 }
 
-.padding-container {
-  width: 100%;
-}
-
-#brand {
-  width: 175px;
-  height: 100%;
-  margin-left: 0.5rem;
-}
-
-.menu-list {
-  display: none;
-}
-
-.menu-icon {
-  position: relative;
-  height: 100%;
-  width: 40px;
-  display: inline-block;
-  margin-right: 1rem;
-  z-index: 10;
-}
-
-.menu-line1 {
-  position: fixed;
-  top: 1.7rem;
-  width: 40px;
-  height: 4px;
-  background-color: #ffffff;
-  border-radius: 25px;
-}
-
-.menu-line2 {
-  position: fixed;
-  top: 2.2rem;
-  width: 40px;
-  height: 4px;
-  background-color: #ffffff;
-  border-radius: 25px;
-}
-
-.slidein-menu {
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  background-color: $primary-color;
-  z-index: 2;
-  transform: translateX(100%);
-}
-
-.slidein-menu ul {
-  position: absolute;
-  text-align: right;
-  list-style-type: none;
-  right: 2rem;
-  top: 6rem;
-}
-
-.slidein-menu ul li {
-  font-size: 2rem;
-  margin-top: 2rem;
-}
-
-.slidein-menu ul li a {
-  text-decoration: none;
-  color: #fff;
-  transition: color 0.5s;
-  &:hover {
-    color: $secondary-color;
-  }
-}
+/* ============================
+LANDING SECTION OF INDEX.HTML
+============================== */
 
 .landing {
   position: relative;
@@ -97,14 +25,6 @@ nav {
   z-index: 1;
   margin-top: 4rem;
   padding-bottom: 2rem;
-}
-
-.wrapper {
-  padding: 0rem 2rem;
-}
-
-.wrapper-half {
-  padding: 0rem 0.5rem;
 }
 
 .landing h2 {
@@ -151,6 +71,10 @@ nav {
   text-decoration: none;
 }
 
+/* ==========================
+WHO WE ARE SECTION OF INDEX.HTML
+============================*/
+
 .whoweare {
   margin-top: 4rem;
   color: #6f6f6f;
@@ -169,12 +93,14 @@ nav {
 }
 
 .whoweare .pairprogramming {
-  display: block;
   height: 200px;
   width: 100%;
-  margin: 0 auto;
   margin-top: 5rem;
 }
+
+/*==========================
+CEOQUOTE SECTION OF INDEX.HTML
+===========================*/
 
 .ceoquote {
   margin-top: 8rem;
@@ -204,6 +130,10 @@ nav {
   padding-right: 2rem;
   font-style: italic;
 }
+
+/*===========================
+PARTNERS SECTION OF INDEX.HTML
+============================*/
 
 .partners {
   margin-top: 8rem;
@@ -271,6 +201,10 @@ nav {
   margin-top: 3rem;
 }
 
+/* =========================
+QUOTES SECTION OF INDEX.HTML
+===========================*/
+
 .quotes {
   margin: 4rem 0;
 }
@@ -306,7 +240,6 @@ nav {
   padding: 3rem;
   top: 20px;
   color: #fff;
-  // padding: 65px 1rem;
 }
 
 .quotes .quotecontainer .profile-img {
@@ -327,6 +260,10 @@ nav {
   right: 70px;
   color: #fff;
 }
+
+/* =================
+FOOTER SECTION
+===================*/
 
 .top-footer {
   background-color: $secondary-color;
@@ -374,3 +311,7 @@ nav {
 .bottom-footer ul li:first-child {
   margin-bottom: 1rem;
 }
+
+@import "design";
+
+@import "signup";
