@@ -1,0 +1,28 @@
+.design {
+  margin-top: 4rem;
+  color: #6f6f6f;
+  padding-bottom: 4rem;
+}
+
+.design h2 {
+  text-align: center;
+  color: $secondary-color;
+  padding-top: 4rem;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.design p {
+  text-align: center;
+  padding-top: 3rem;
+  font-weight: 200;
+  font-size: 18px;
+}
+
+.design .designtoolsimg {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 500px;
+  padding-top: 5rem;
+}
