@@ -17,7 +17,7 @@ let menuSwitch = true;
 function mobileSlideIn() {
   menuSwitch = !menuSwitch;
   if (menuSwitch === false) {
-    sideMenu.style.transition = ".5s ease-in";
+    sideMenu.style.transition = ".3s ease-in";
     sideMenu.style.transform = "translateX(0)";
     menuLine1.style.transform = "rotate(45deg) translate(3px,10px)";
     menuLine2.style.transform = "rotate(134deg) translate(4px,3px)";
