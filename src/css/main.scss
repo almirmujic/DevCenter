@@ -153,52 +153,73 @@ PARTNERS SECTION OF INDEX.HTML
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
-  margin-top: 3rem;
+  justify-content: space-around;
+  opacity: 0.6;
+  margin: 0 auto;
+  margin-top: 1rem;
+  max-width: 999px;
 }
 
 .partners .pepsico {
-  width: 46%;
+  width: 50%;
+  max-width: 200px;
+  margin-top: 1rem;
+  padding: 1rem;
 }
 
 .partners .amazon {
   height: 100px;
-  width: 46%;
+  width: 50%;
+  max-width: 200px;
   fill: #fff;
+  margin-top: 1rem;
+  padding: 1rem;
 }
 
 .partners .paypal {
-  width: 46%;
+  height: 100px;
+  width: 50%;
+  max-width: 200px;
   fill: #fff;
-  height: 90px;
-  margin-top: 3rem;
+  margin-top: 2rem;
+  padding: 1rem;
 }
 
 .partners .chase {
-  width: 46%;
-  margin-top: 4rem;
+  width: 50%;
+  max-width: 200px;
+  margin-top: 2rem;
+  padding: 1rem;
 }
 
 .partners .hulu {
-  width: 46%;
+  width: 50%;
+  max-width: 200px;
   margin-top: 3rem;
+  padding: 1rem;
 }
 
 .partners .toyota {
-  width: 46%;
+  width: 50%;
+  max-width: 200px;
   margin-top: 4rem;
+  padding: 1rem;
 }
 
 .partners .ge {
-  width: 46%;
+  width: 50%;
+  max-width: 200px;
   margin-top: 4rem;
+  padding: 1rem;
 }
 
 .partners .apple {
-  width: 46%;
-  height: 120px;
+  height: 130px;
+  width: 50%;
+  max-width: 200px;
   fill: #fff;
   margin-top: 3rem;
+  padding: 1rem;
 }
 
 /* =========================
@@ -221,10 +242,12 @@ QUOTES SECTION OF INDEX.HTML
   height: 180px;
   max-width: 400px;
   width: 100%;
-  border-radius: 15px;
-  background-color: #7bddc9cd;
-  margin-bottom: 2rem;
+  background-color: #fff;
+  border-radius: 0 0 15px 15px;
+  margin: 1rem;
   z-index: -1;
+  box-shadow: 0px 6px 18px -7px #333;
+  border-top: 6px solid $secondary-color;
 }
 
 .quotes .profile-quote {
@@ -239,7 +262,7 @@ QUOTES SECTION OF INDEX.HTML
   position: relative;
   padding: 3rem;
   top: 20px;
-  color: #fff;
+  color: $secondary-color;
 }
 
 .quotes .quotecontainer .profile-img {
@@ -249,8 +272,7 @@ QUOTES SECTION OF INDEX.HTML
   height: 45px;
   width: 45px;
   border-radius: 50%;
-  background-color: white;
-  border: 2px solid #fff;
+  border: 2px solid $secondary-color;
 }
 
 .quotes .quotecontainer .profile-name {
@@ -258,7 +280,7 @@ QUOTES SECTION OF INDEX.HTML
   font-size: 14px;
   bottom: 22px;
   right: 70px;
-  color: #fff;
+  color: $secondary-color;
 }
 
 /* =================
@@ -313,5 +335,7 @@ FOOTER SECTION
 }
 
 @import "design";
+
+@import "development";
 
 @import "signup";
