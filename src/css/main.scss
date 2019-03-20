@@ -8,10 +8,20 @@ PADDING WRAPPERS THROUGHOUT SITE
 
 .wrapper {
   padding: 0rem 2rem;
+  @media screen and (min-width: 768px) {
+    padding: unset;
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
 .wrapper-half {
   padding: 0rem 0.5rem;
+  @media screen and (min-width: 768px) {
+    padding: unset;
+    width: 88%;
+    margin: 0 auto;
+  }
 }
 
 /* ============================
@@ -78,11 +88,26 @@ WHO WE ARE SECTION OF INDEX.HTML
 .whoweare {
   margin-top: 4rem;
   color: #6f6f6f;
+  @media screen and (min-width: 768px) {
+    .wrapper {
+      width: 80%;
+      max-width: 900px;
+    }
+  }
+}
+
+.whoweare-flex {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .whoweare h2 {
   text-align: center;
   color: $secondary-color;
+  @media screen and (min-width: 768px) {
+    text-align: unset;
+  }
 }
 
 .whoweare p {
@@ -90,6 +115,12 @@ WHO WE ARE SECTION OF INDEX.HTML
   padding-top: 3rem;
   font-size: 1.2rem;
   font-weight: 200;
+  @media screen and (min-width: 768px) {
+    flex: 50%;
+    text-align: unset;
+    padding: 1rem 1rem 1rem 0;
+    margin-top: 2rem;
+  }
 }
 
 .whoweare .pairprogramming {
@@ -104,6 +135,11 @@ CEOQUOTE SECTION OF INDEX.HTML
 
 .ceoquote {
   margin-top: 8rem;
+  @media screen and (min-width: 768px) {
+    .wrapper {
+      max-width: 300px;
+    }
+  }
 }
 
 .ceoquote .quote {
@@ -140,12 +176,17 @@ PARTNERS SECTION OF INDEX.HTML
   background-color: $primary-color;
   color: #fff;
   padding-bottom: 4rem;
+  @media screen and (min-width: 768px) {
+    .wrapper {
+      width: 80%;
+      max-width: 900px;
+    }
+  }
 }
 
 .partners h2 {
   display: block;
   text-align: center;
-  font-size: 2rem;
   padding-top: 3rem;
 }
 
@@ -155,9 +196,7 @@ PARTNERS SECTION OF INDEX.HTML
   align-items: center;
   justify-content: space-around;
   opacity: 0.6;
-  margin: 0 auto;
   margin-top: 1rem;
-  max-width: 999px;
 }
 
 .partners .pepsico {
@@ -246,7 +285,7 @@ QUOTES SECTION OF INDEX.HTML
   border-radius: 0 0 15px 15px;
   margin: 1rem;
   z-index: -1;
-  box-shadow: 0px 6px 18px -7px #333;
+  box-shadow: 0px 6px 18px -7px #33333396;
   border-top: 6px solid $secondary-color;
 }
 
