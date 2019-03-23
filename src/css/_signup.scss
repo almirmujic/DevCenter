@@ -2,6 +2,12 @@
   background-color: $primary-color;
   margin-top: 4rem;
   padding-bottom: 6rem;
+  .wrapper {
+    max-width: 400px;
+    width: 80%;
+    margin: 0 auto;
+    padding: unset;
+  }
 }
 
 .signup h2 {
@@ -15,14 +21,25 @@
 .forms-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-content: center;
   width: 100%;
-  margin-top: 4rem;
+  margin-top: 3rem;
   margin-bottom: 20rem;
 }
 
 .forms-container input {
+  all: unset;
+  box-sizing: border-box;
+  height: 48px;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 200;
+  padding: 0 10px;
+  background-color: #fff;
+  border: 2px solid transparent;
+  transition: 1s border;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+  color: #a0a0a0a1;
   &::-webkit-input-placeholder {
     color: #a0a0a0a1;
   }
@@ -32,35 +49,107 @@
   &:focus {
     border: 2px solid $secondary-color;
   }
-  all: unset;
-  width: 90%;
-  max-width: 400px;
-  height: 48px;
-  font-size: 18px;
-  font-weight: 200;
-  align-self: center;
-  padding: 0 10px;
-  background-color: #fff;
-  border: 2px solid transparent;
-  transition: 1s border;
-  border-radius: 15px;
-  margin-bottom: 2rem;
 }
 
-.continuebtn {
+.continuebtn::after {
+  content: "or";
+  display: block;
   text-align: center;
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  color: #fff;
 }
 
 .continuelink {
   display: inline-flex;
+  justify-content: space-around;
   background: linear-gradient(#9aedde, $primary-color);
   -webkit-text-fill-color: #fff;
-  box-shadow: 0px 6px 18px -7px #333;
+  box-shadow: 0px 6px 18px -7px #33333383;
   border-radius: 15px;
-  padding: 13px;
   transition: 0.5s;
   text-decoration: none;
-  width: 90%;
-  max-width: 400px;
-  justify-self: center;
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+}
+
+.continuelink:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  transition: 1s;
+}
+
+.link-work {
+  display: none;
+  @media screen and (min-width: 470px) {
+    display: unset;
+  }
+}
+
+.connectlink-flex {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.googlelink {
+  display: inline-flex;
+  justify-content: space-between;
+  background: linear-gradient(#f17469, #db4437);
+  -webkit-text-fill-color: #fff;
+  box-shadow: 0px 6px 18px -7px #33333383;
+  border-radius: 15px;
+  transition: 0.5s;
+  text-decoration: none;
+  width: 48%;
+  padding: 15px;
+  text-align: center;
+  .googleicon {
+    height: 20px;
+    flex: 15%;
+    fill: #fff;
+    opacity: 0.6;
+    transition: 0.6s;
+  }
+  &:hover {
+    cursor: pointer;
+    .googleicon {
+      opacity: 1;
+    }
+  }
+  span {
+    flex: 85%;
+  }
+}
+
+.facebooklink {
+  display: inline-flex;
+  justify-content: space-between;
+  background: #3b5998;
+  -webkit-text-fill-color: #fff;
+  box-shadow: 0px 6px 18px -7px #33333383;
+  border-radius: 15px;
+  transition: 0.5s;
+  text-decoration: none;
+  width: 48%;
+  padding: 15px;
+  text-align: center;
+  .facebookicon {
+    height: 20px;
+    flex: 15%;
+    fill: #fff;
+    opacity: 0.6;
+    transition: 0.6s;
+  }
+  span {
+    flex: 85%;
+  }
+  &:hover {
+    cursor: pointer;
+    .facebookicon {
+      opacity: 1;
+    }
+  }
 }
