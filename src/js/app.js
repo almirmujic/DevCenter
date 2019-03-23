@@ -1,18 +1,8 @@
-// var screenWidth = window.matchMedia("(min-width: 768px)");
-// screenFunction(screenWidth);
-// screenWidth.addListener(screenFunction);
-
-// function screenFunction(screenWidth) {
-//   if (screenWidth.matches) {
-//     toggler = true;
-//   }
-// }
-
 document.querySelector(".menu-icon").addEventListener("click", mobileSlideIn);
-let sideMenu = document.querySelector(".slidein-menu");
-let menuLine1 = document.querySelector(".menu-line1");
-let menuLine2 = document.querySelector(".menu-line2");
-let navbar = document.querySelector("nav");
+const sideMenu = document.querySelector(".slidein-menu");
+const menuLine1 = document.querySelector(".menu-line1");
+const menuLine2 = document.querySelector(".menu-line2");
+const navbar = document.querySelector("nav");
 let menuSwitch = true;
 
 function mobileSlideIn() {
@@ -43,7 +33,7 @@ window.onscroll = function() {
 
 function scrollFunction() {
   if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
-    navbar.style.boxShadow = "0px -4px 20px -4px #333";
+    navbar.style.boxShadow = "0px -4px 20px -4px #33333396";
   } else if (document.body.scrollTop == 0) {
     navbar.style.boxShadow = "unset";
   }
