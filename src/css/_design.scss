@@ -34,7 +34,7 @@
   padding-bottom: 4rem;
   @media screen and (min-width: 768px) {
     .wrapper {
-      width: 70%;
+      max-width: 1400px;
     }
   }
 }
