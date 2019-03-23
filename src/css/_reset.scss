@@ -31,3 +31,26 @@ dir {
 p {
   line-height: 1.3;
 }
+
+/*  ============================
+PADDING WRAPPERS THROUGHOUT SITE
+==============================*/
+
+.wrapper {
+  padding: 0rem 2rem;
+  @media screen and (min-width: 768px) {
+    padding: unset;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+.wrapper-half {
+  padding: 0rem 0.5rem;
+  @media screen and (min-width: 768px) {
+    padding: unset;
+    width: 90%;
+    max-width: 1366px;
+    margin: 0 auto;
+  }
+}
