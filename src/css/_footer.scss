@@ -1,0 +1,50 @@
+/* =================
+FOOTER SECTION
+===================*/
+
+.top-footer {
+  background-color: $secondary-color;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-container ul {
+  flex: 40%;
+  list-style-type: none;
+  color: $primary-color;
+  font-weight: 100;
+  font-size: 14px;
+}
+
+.footer-container ul li {
+  margin-bottom: 1rem;
+}
+
+.footer-container ul li:first-child {
+  margin-top: 2rem;
+}
+
+.bottom-footer {
+  background-color: $primary-color;
+  padding: 1rem 0;
+}
+
+.bottom-footer ul {
+  color: #fff;
+  font-weight: 100;
+  font-size: 14px;
+  list-style-type: none;
+}
+
+.bottom-footer ul li {
+  margin-bottom: 0.5rem;
+}
+
+.bottom-footer ul li:first-child {
+  margin-bottom: 1rem;
+}
