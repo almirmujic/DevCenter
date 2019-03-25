@@ -1,0 +1,249 @@
+/* ==================================
+DEVELOPMENT SECTION OF DEVELOPMENT PAGE
+===================================*/
+
+.development {
+  margin-top: 4rem;
+  color: #6f6f6f;
+  @media screen and (min-width: 768px) {
+    .wrapper {
+      max-width: 1000px;
+    }
+  }
+}
+
+.dev-flex {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin: 0 auto;
+  }
+}
+
+.development h2 {
+  text-align: center;
+  color: $secondary-color;
+  padding-top: 4rem;
+  font-weight: 500;
+  @media screen and (min-width: 768px) {
+    font-size: 2rem;
+  }
+}
+
+.development img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 500px;
+  padding-top: 2rem;
+  @media screen and (min-width: 768px) {
+    order: 2;
+    max-height: 400px;
+    flex: 50%;
+  }
+}
+
+.development p {
+  text-align: center;
+  padding-top: 3rem;
+  font-weight: 200;
+  @media screen and (min-width: 768px) {
+    justify-self: center;
+    align-self: center;
+    flex: 50%;
+    margin: 1rem;
+    font-size: 18px;
+  }
+}
+
+.development::after {
+  content: "";
+  display: block;
+  background-image: url("../assets/launch-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(90deg);
+  margin-top: 4rem;
+  height: 300px;
+}
+
+/*==========================
+FRONTEND FRAMEWORK SECTION
+==========================*/
+
+.frontend-framework {
+  padding-top: 4rem;
+  color: #6f6f6f;
+  @media screen and (min-width: 768px) {
+    .wrapper {
+      max-width: 1000px;
+    }
+  }
+}
+
+.frontend-framework {
+  &::after {
+    content: "";
+    display: block;
+    border: 0.5px solid #d5d5d58e;
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+.frontend-flex {
+  margin-bottom: 6rem;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.frontend-framework p {
+  text-align: center;
+  padding-top: 2rem;
+  font-weight: 200;
+  @media screen and (min-width: 768px) {
+    padding-top: 1rem;
+    font-size: 18px;
+    justify-self: center;
+    align-self: center;
+    flex: 40%;
+    margin: 1rem;
+  }
+}
+
+.frontend-framework h2 {
+  color: $secondary-color;
+  text-align: center;
+  font-weight: 500;
+  @media screen and (min-width: 768px) {
+    font-size: 2rem;
+  }
+}
+
+.frontend-framework .framework-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  padding: 2rem 0;
+  @media screen and (min-width: 768px) {
+    flex: 50%;
+    padding: 2rem 0;
+  }
+}
+
+.frontend-framework svg {
+  padding: 10px 10px 0 10px;
+  min-height: 120px;
+  max-height: 144px;
+  align-self: center;
+}
+
+.angular-container,
+.react-container,
+.vue-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  @media screen and (min-width: 768px) {
+    margin-bottom: unset;
+  }
+}
+
+.angular-container span,
+.react-container span,
+.vue-container span {
+  text-align: center;
+  opacity: 0.6;
+}
+
+.frontend-framework .angular {
+  fill: #ff0000;
+  height: 100%;
+}
+
+.frontend-framework .react {
+  fill: #19e9f0;
+  height: 100%;
+}
+
+.frontend-framework .vue {
+  fill: #008060;
+  height: 100%;
+}
+
+/* ==============
+BACKEND SECTION
+===============*/
+
+.backend {
+  padding-top: 8rem;
+  color: #6f6f6f;
+  p {
+    text-align: center;
+    padding-top: 2rem;
+    font-weight: 200;
+  }
+  @media screen and (min-width: 768px) {
+    .wrapper {
+      max-width: 1000px;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+}
+
+.backend h2 {
+  color: $secondary-color;
+  text-align: center;
+  font-weight: 500;
+  @media screen and (min-width: 768px) {
+    font-size: 2rem;
+  }
+}
+
+.backend-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  padding: 4rem 0;
+}
+
+.nodejs-container,
+.express-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.nodejs-container span,
+.express-container span {
+  text-align: center;
+  max-width: 300px;
+  opacity: 0.6;
+}
+
+.express-container span {
+  padding-top: 2rem;
+  opacity: 0.6;
+}
+
+.backend-icons .nodejs {
+  fill: $secondary-color;
+  width: 100%;
+  max-width: 200px;
+  align-self: center;
+}
+
+.backend-icons .express {
+  width: 100%;
+  max-width: 200px;
+  justify-self: center;
+  align-self: center;
+  padding-top: 3.5rem;
+}
