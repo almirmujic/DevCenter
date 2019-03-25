@@ -1,0 +1,345 @@
+/* ============================
+LANDING SECTION OF INDEX.HTML
+============================== */
+
+.landing {
+  position: relative;
+  width: 100%;
+  background-color: $primary-color;
+  z-index: 1;
+  margin-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+.landing h2 {
+  position: relative;
+  font-size: 3rem;
+  padding-top: 50px;
+  padding-bottom: 1rem;
+  color: #fff;
+  text-align: center;
+}
+
+.landing span {
+  display: block;
+  color: #fff;
+  font-weight: 100;
+  font-size: 24px;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.landing p {
+  color: #fff;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.landing .btn {
+  text-align: center;
+}
+
+.btnlink:hover {
+  cursor: pointer;
+  transform: scale(1.06);
+}
+
+.landing .btnlink {
+  display: inline-flex;
+  background: linear-gradient(#9aedde, $primary-color);
+  -webkit-text-fill-color: #fff;
+  box-shadow: 0px 6px 18px -7px #333;
+  border-radius: 15px;
+  padding: 13px;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+/* ==========================
+  WHO WE ARE SECTION OF INDEX.HTML
+  ============================*/
+
+.whoweare {
+  margin-top: 4rem;
+  color: #6f6f6f;
+  &::after {
+    content: "";
+    display: block;
+    border: 0.5px solid #d5d5d58e;
+    width: 50%;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 768px) {
+    .wrapper {
+      width: 60%;
+      max-width: 1000px;
+    }
+  }
+}
+
+.whoweare-flex {
+  @media screen and (min-width: 768px) {
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: space-between;
+  }
+}
+
+.whoweare h2 {
+  text-align: center;
+  color: $secondary-color;
+  font-weight: 500;
+  @media screen and (min-width: 768px) {
+    text-align: center;
+  }
+}
+
+.whoweare p {
+  text-align: center;
+  padding-top: 3rem;
+  font-weight: 200;
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+  }
+}
+
+.whoweare .pairprogramming {
+  height: 200px;
+  width: 100%;
+  margin-top: 6rem;
+  margin-bottom: 8rem;
+  @media screen and (min-width: 768px) {
+    height: 300px;
+  }
+}
+
+/*==========================
+  CEOQUOTE SECTION OF INDEX.HTML
+  ===========================*/
+
+.ceoquote {
+  margin-top: 8rem;
+  .wrapper {
+    max-width: 600px;
+    padding: unset;
+    margin: 0 auto;
+  }
+}
+
+.ceoquote .quote {
+  display: block;
+  margin: 0 auto;
+  fill: $primary-color;
+  width: 60px;
+  @media screen and (min-width: 768px) {
+    width: 80px;
+  }
+}
+
+.ceoquote span {
+  display: block;
+  text-align: center;
+  padding-top: 2rem;
+  font-weight: 200;
+  width: 80%;
+  margin: 0 auto;
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    font-size: 1.3rem;
+  }
+}
+
+.ceoquote span::after {
+  content: "- author, CEO of DevCenter";
+  display: block;
+  color: #6f6f6f;
+  opacity: 0.6;
+  text-align: right;
+  padding-top: 1rem;
+  padding-right: 2rem;
+  font-style: italic;
+  font-size: 0.8rem;
+  @media screen and (min-width: 768px) {
+    font-size: 1.1rem;
+  }
+}
+
+/*===========================
+  PARTNERS SECTION OF INDEX.HTML
+  ============================*/
+
+.partners {
+  margin-top: 8rem;
+  background-color: $primary-color;
+  color: #fff;
+  padding-bottom: 4rem;
+  @media screen and (min-width: 768px) {
+    .wrapper {
+      width: 80%;
+      max-width: 900px;
+    }
+  }
+}
+
+.partners h2 {
+  display: block;
+  text-align: center;
+  padding-top: 3rem;
+  font-weight: 500;
+}
+
+.partners .brands {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  opacity: 0.6;
+  margin-top: 1rem;
+}
+
+.partners .pepsico {
+  width: 50%;
+  max-width: 200px;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.partners .amazon {
+  height: 100px;
+  width: 50%;
+  max-width: 200px;
+  fill: #fff;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.partners .paypal {
+  height: 100px;
+  width: 50%;
+  max-width: 200px;
+  fill: #fff;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+.partners .chase {
+  width: 50%;
+  max-width: 200px;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+.partners .hulu {
+  width: 50%;
+  max-width: 200px;
+  margin-top: 3rem;
+  padding: 1rem;
+}
+
+.partners .toyota {
+  width: 50%;
+  max-width: 200px;
+  margin-top: 4rem;
+  padding: 1rem;
+}
+
+.partners .ge {
+  width: 50%;
+  max-width: 200px;
+  margin-top: 4rem;
+  padding: 1rem;
+}
+
+.partners .apple {
+  height: 130px;
+  width: 50%;
+  max-width: 200px;
+  fill: #fff;
+  margin-top: 3rem;
+  padding: 1rem;
+}
+
+/* =========================
+  QUOTES SECTION OF INDEX.HTML
+  ===========================*/
+
+.quotes {
+  margin: 8rem 0;
+}
+
+.quotes .quoteflex {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.quotes .quotecontainer {
+  position: relative;
+  //   height: 180px;
+  display: flex;
+  height: 100%;
+  min-height: 190px;
+  max-width: 400px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 0 0 15px 15px;
+  margin: 1rem;
+  z-index: -1;
+  box-shadow: 0px 6px 18px -7px #33333396;
+  border-top: 6px solid $secondary-color;
+}
+
+/*
+ position: relative;
+  //   height: 180px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 100%;
+  min-height: 190px;
+  max-width: 400px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 0 0 15px 15px;
+  margin: 1rem;
+  z-index: -1;
+  box-shadow: 0px 6px 18px -7px #33333396;
+  border-top: 6px solid $secondary-color;
+*/
+
+.quotes .profile-quote {
+  position: absolute;
+  fill: $secondary-color;
+  height: 40px;
+  left: 0.5rem;
+  top: 0.5rem;
+}
+
+.quotes p {
+  position: relative;
+  //   padding: 3rem;
+  //   top: 10px;
+  padding: 0 2rem;
+  justify-self: center;
+  align-self: center;
+  color: $secondary-color;
+}
+
+.quotes .quotecontainer .profile-img {
+  position: absolute;
+  bottom: 10px;
+  right: 1rem;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  border: 2px solid $secondary-color;
+}
+
+.quotes .quotecontainer .profile-name {
+  position: absolute;
+  font-size: 14px;
+  bottom: 22px;
+  right: 70px;
+  color: $secondary-color;
+}
