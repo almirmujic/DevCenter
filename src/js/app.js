@@ -8,28 +8,17 @@ let menuSwitch = true;
 function mobileSlideIn() {
   menuSwitch = !menuSwitch;
   if (menuSwitch === false) {
-    sideMenu.style.transition = ".8s cubic-bezier(.64,0,.37,.99)";
-    sideMenu.style.transform = "translateX(0)";
-    menuLine1.style.transform = "rotate(45deg) translate(3px,10px)";
-    menuLine2.style.transform = "rotate(134deg) translate(4px,3px)";
-    menuLine1.style.backgroundColor = "red";
-    menuLine2.style.backgroundColor = "red";
-    menuLine1.style.transition = ".3s ease-in";
-    menuLine2.style.transition = ".3s ease-in";
+    menuLine1.classList.add("open-topline");
+    menuLine2.classList.add("open-bottomline");
+    sideMenu.classList.add("open-sidemenu");
     document.querySelector("body").style.overflow = "hidden";
   } else {
-    sideMenu.style.transform = "translateX(100%)";
-    menuLine1.style.backgroundColor = "#fff";
-    menuLine2.style.backgroundColor = "#fff";
-    menuLine1.style.transform = "rotate(0deg)";
-    menuLine2.style.transform = "rotate(0deg)";
+    menuLine1.classList.remove("open-topline");
+    menuLine2.classList.remove("open-bottomline");
+    sideMenu.classList.remove("open-sidemenu");
     document.querySelector("body").style.overflow = "unset";
   }
 }
-
-window.onscroll = function() {
-  scrollFunction();
-};
 
 function scrollFunction() {
   if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
