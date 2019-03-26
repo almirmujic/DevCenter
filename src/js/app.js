@@ -3,6 +3,7 @@ const sideMenu = document.querySelector(".slidein-menu");
 const menuLine1 = document.querySelector(".menu-line1");
 const menuLine2 = document.querySelector(".menu-line2");
 const navbar = document.querySelector("nav");
+const body = document.querySelector("body");
 let menuSwitch = true;
 
 function mobileSlideIn() {
@@ -11,12 +12,12 @@ function mobileSlideIn() {
     menuLine1.classList.add("open-topline");
     menuLine2.classList.add("open-bottomline");
     sideMenu.classList.add("open-sidemenu");
-    document.querySelector("body").style.overflow = "hidden";
+    body.style.overflow = "hidden";
   } else {
     menuLine1.classList.remove("open-topline");
     menuLine2.classList.remove("open-bottomline");
     sideMenu.classList.remove("open-sidemenu");
-    document.querySelector("body").style.overflow = "unset";
+    body.style.overflow = "unset";
   }
 }
 
