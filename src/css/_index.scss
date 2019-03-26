@@ -11,7 +11,7 @@ LANDING SECTION OF INDEX.HTML
   padding-bottom: 2rem;
 }
 
-.landing h2 {
+.landing h1 {
   position: relative;
   font-size: 3rem;
   padding-top: 50px;
@@ -24,15 +24,24 @@ LANDING SECTION OF INDEX.HTML
   display: block;
   color: #fff;
   font-weight: 100;
-  font-size: 24px;
+  font-size: 20px;
   text-align: center;
   padding-bottom: 2rem;
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+  }
 }
 
 .landing p {
   color: #fff;
+  opacity: 0.9;
   text-align: center;
   padding-bottom: 2rem;
+  font-size: 14px;
+  font-weight: 200;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
 }
 
 .landing .btn {
@@ -71,17 +80,9 @@ LANDING SECTION OF INDEX.HTML
   }
   @media screen and (min-width: 768px) {
     .wrapper {
-      width: 60%;
+      width: 70%;
       max-width: 1000px;
     }
-  }
-}
-
-.whoweare-flex {
-  @media screen and (min-width: 768px) {
-    // display: flex;
-    // flex-direction: row;
-    // justify-content: space-between;
   }
 }
 
@@ -172,91 +173,47 @@ LANDING SECTION OF INDEX.HTML
   margin-top: 8rem;
   background-color: $primary-color;
   color: #fff;
-  padding-bottom: 4rem;
-  @media screen and (min-width: 768px) {
-    .wrapper {
-      width: 80%;
-      max-width: 900px;
-    }
-  }
+  padding-bottom: 1rem;
 }
 
-.partners h2 {
+.partners h3 {
   display: block;
   text-align: center;
   padding-top: 3rem;
-  font-weight: 500;
+  font-weight: 400;
+  opacity: 0.7;
 }
 
 .partners .brands {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 88px);
+  justify-content: space-evenly;
   align-items: center;
-  justify-content: space-around;
+  grid-gap: 64px 32px;
+  margin: 0 auto;
+  padding: 3rem 0;
   opacity: 0.6;
-  margin-top: 1rem;
+  @media screen and (min-width: 568px) {
+    grid-template-columns: repeat(3, 88px);
+  }
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(5, 90px);
+    max-width: 1000px;
+  }
 }
 
-.partners .pepsico {
-  width: 50%;
-  max-width: 200px;
-  margin-top: 1rem;
-  padding: 1rem;
+.partners .brands div {
+  justify-self: center;
+  align-self: center;
 }
 
-.partners .amazon {
-  height: 100px;
-  width: 50%;
-  max-width: 200px;
-  fill: #fff;
-  margin-top: 1rem;
-  padding: 1rem;
+.twitter {
+  height: 100%;
 }
 
-.partners .paypal {
-  height: 100px;
-  width: 50%;
-  max-width: 200px;
-  fill: #fff;
-  margin-top: 2rem;
-  padding: 1rem;
-}
-
-.partners .chase {
-  width: 50%;
-  max-width: 200px;
-  margin-top: 2rem;
-  padding: 1rem;
-}
-
-.partners .hulu {
-  width: 50%;
-  max-width: 200px;
-  margin-top: 3rem;
-  padding: 1rem;
-}
-
-.partners .toyota {
-  width: 50%;
-  max-width: 200px;
-  margin-top: 4rem;
-  padding: 1rem;
-}
-
-.partners .ge {
-  width: 50%;
-  max-width: 200px;
-  margin-top: 4rem;
-  padding: 1rem;
-}
-
-.partners .apple {
-  height: 130px;
-  width: 50%;
-  max-width: 200px;
-  fill: #fff;
-  margin-top: 3rem;
-  padding: 1rem;
+.partners .brands img {
+  min-width: 77px;
+  max-width: 100%;
 }
 
 /* =========================
@@ -276,7 +233,6 @@ LANDING SECTION OF INDEX.HTML
 
 .quotes .quotecontainer {
   position: relative;
-  //   height: 180px;
   display: flex;
   height: 100%;
   min-height: 190px;
@@ -289,24 +245,6 @@ LANDING SECTION OF INDEX.HTML
   box-shadow: 0px 6px 18px -7px #33333396;
   border-top: 6px solid $secondary-color;
 }
-
-/*
- position: relative;
-  //   height: 180px;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  height: 100%;
-  min-height: 190px;
-  max-width: 400px;
-  width: 100%;
-  background-color: #fff;
-  border-radius: 0 0 15px 15px;
-  margin: 1rem;
-  z-index: -1;
-  box-shadow: 0px 6px 18px -7px #33333396;
-  border-top: 6px solid $secondary-color;
-*/
 
 .quotes .profile-quote {
   position: absolute;
@@ -318,11 +256,10 @@ LANDING SECTION OF INDEX.HTML
 
 .quotes p {
   position: relative;
-  //   padding: 3rem;
-  //   top: 10px;
   padding: 0 2rem;
   justify-self: center;
   align-self: center;
+  font-weight: 200;
   color: $secondary-color;
 }
 
@@ -342,4 +279,5 @@ LANDING SECTION OF INDEX.HTML
   bottom: 22px;
   right: 70px;
   color: $secondary-color;
+  opacity: 0.8;
 }
