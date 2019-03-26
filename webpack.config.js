@@ -39,23 +39,33 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       filename: "index.html",
-      template: "./src/index.html"
+      template: "./src/index.html",
+      favicon: "./src/assets/favicon.png"
     }),
     new HtmlWebpackPlugin({
       filename: "design.html",
-      template: "./src/design.html"
+      template: "./src/design.html",
+      favicon: "./src/assets/favicon.png"
     }),
     new HtmlWebpackPlugin({
       filename: "development.html",
-      template: "./src/development.html"
+      template: "./src/development.html",
+      favicon: "./src/assets/favicon.png"
     }),
     new HtmlWebpackPlugin({
       filename: "signup.html",
-      template: "./src/signup.html"
+      template: "./src/signup.html",
+      favicon: "./src/assets/favicon.png"
+    }),
+    new HtmlWebpackPlugin({
+      filename: "login.html",
+      template: "./src/login.html",
+      favicon: "./src/assets/favicon.png"
     }),
     new MiniCssExtractPlugin({
       filename: "[name].css",
-      chunkFilename: "[id].css"
+      chunkFilename: "[id].css",
+      favicon: "./src/assets/favicon.png"
     }),
     new CleanWebpackPlugin()
   ]
