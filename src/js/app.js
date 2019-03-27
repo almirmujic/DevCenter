@@ -1,10 +1,15 @@
-document.querySelector(".menu-icon").addEventListener("click", mobileSlideIn);
 const sideMenu = document.querySelector(".slidein-menu");
 const menuLine1 = document.querySelector(".menu-line1");
 const menuLine2 = document.querySelector(".menu-line2");
 const navbar = document.querySelector("nav");
 const body = document.querySelector("body");
 let menuSwitch = true;
+
+document.querySelector(".menu-icon").addEventListener("click", mobileSlideIn);
+
+window.onscroll = function() {
+  scrollFunction();
+};
 
 function mobileSlideIn() {
   menuSwitch = !menuSwitch;
