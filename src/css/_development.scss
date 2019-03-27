@@ -19,7 +19,7 @@ DEVELOPMENT SECTION OF DEVELOPMENT PAGE
   }
 }
 
-.development h2 {
+.development h1 {
   text-align: center;
   color: $secondary-color;
   padding-top: 4rem;
@@ -115,8 +115,9 @@ FRONTEND FRAMEWORK SECTION
   color: $secondary-color;
   text-align: center;
   font-weight: 500;
+  font-size: 20px;
   @media screen and (min-width: 768px) {
-    font-size: 2rem;
+    font-size: 26px;
   }
 }
 
@@ -200,8 +201,9 @@ BACKEND SECTION
   color: $secondary-color;
   text-align: center;
   font-weight: 500;
+  font-size: 20px;
   @media screen and (min-width: 768px) {
-    font-size: 2rem;
+    font-size: 26px;
   }
 }
 
