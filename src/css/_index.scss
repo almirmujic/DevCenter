@@ -57,7 +57,7 @@ LANDING SECTION OF INDEX.HTML
   display: inline-flex;
   background: linear-gradient(#9aedde, $primary-color);
   -webkit-text-fill-color: #fff;
-  box-shadow: 0px 6px 18px -7px #333;
+  box-shadow: 0px 4px 10px -4px #33333393;
   border-radius: 15px;
   padding: 13px;
   transition: 0.5s;
@@ -81,7 +81,7 @@ LANDING SECTION OF INDEX.HTML
   @media screen and (min-width: 768px) {
     .wrapper {
       width: 70%;
-      max-width: 1000px;
+      max-width: 900px;
     }
   }
 }
@@ -242,7 +242,7 @@ LANDING SECTION OF INDEX.HTML
   border-radius: 0 0 15px 15px;
   margin: 1rem;
   z-index: -1;
-  box-shadow: 0px 6px 18px -7px #33333396;
+  box-shadow: 0px 4px 10px -4px #33333393;
   border-top: 6px solid $secondary-color;
 }
 
