@@ -11,6 +11,15 @@ window.onscroll = function() {
   scrollFunction();
 };
 
+window.addEventListener(
+  'load',
+  function load() {
+    window.removeEventListener('load', load, false);
+    document.body.classList.remove('preload');
+  },
+  false
+);
+
 function mobileSlideIn() {
   menuSwitch = !menuSwitch;
   if (menuSwitch === false) {
