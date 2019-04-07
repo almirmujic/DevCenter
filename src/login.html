@@ -1,109 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>DevCenter</title>
-  </head>
 
-  <body>
-    <header>
-      <nav>
-        <div class="nav-container">
-          <a href="./index.html">
-            <img id="brand" src="./assets/brand.svg" />
-          </a>
-          <div class="menu-icon">
-            <div class="menu-line1"></div>
-            <div class="menu-line2"></div>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>DevCenter</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="nav-container">
+        <a href="./index.html">
+          <img class="brand" src="./assets/brand.svg" />
+        </a>
+        <div class="menu-icon">
+          <div class="menu-line1"></div>
+          <div class="menu-line2"></div>
         </div>
-      </nav>
-      <div class="slidein-menu">
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./design.html">Design</a></li>
-          <li><a href="./development.html">Development</a></li>
-          <li><a href="./signup.html">Sign Up</a></li>
-          <li><a href="./login.html">Log In</a></li>          
-        </ul>
       </div>
-    </header>
-    <main>
-      <section class="signup">
-        <div class="wrapper">
-          <h2>Log In</h2>
-          <div class="forms-container">
-            <input
-              type="text"
-              name="email"
-              id="email"
-              placeholder="Email address"
-            />
-            <input
-              type="password"
-              name="password"
-              id="password"
-              placeholder="Password"
-            />
+    </nav>
+    <div class="slidein-menu">
+      <ul>
+        <li>
+          <a href="./index.html">Home</a>
+        </li>
+        <li>
+          <a href="./design.html">Design</a>
+        </li>
+        <li>
+          <a href="./development.html">Development</a>
+        </li>
+        <li>
+          <a href="./signup.html">Sign Up</a>
+        </li>
+        <li>
+          <a href="./login.html">Log In</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <section class="signup">
+      <div class="wrapper">
+        <h2>Log In</h2>
+        <div class="forms-container">
+          <form>
+            <input type="text" name="email" id="email" placeholder="Email address" />
+            <input type="password" name="password" id="password" placeholder="Password" />
             <div class="continuebtn">
               <a class="continuelink">Continue</a>
             </div>
-            <div class="connectlink-flex">
-              <a class="googlelink">
-                <svg 
-                  xmlns="http://www.w3.org/2000/svg" 
-                  viewBox="0 0 488 512" 
-                  class="googleicon"
-                >
-                  <path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"/>
-                </svg>
-                <span>Sign In</span>
-              </a>
-              <a class="facebooklink">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 448 512"
-                  class="facebookicon"
-                >
-                  <path d="M448 56.7v398.5c0 13.7-11.1 24.7-24.7 24.7H309.1V306.5h58.2l8.7-67.6h-67v-43.2c0-19.6 5.4-32.9 33.5-32.9h35.8v-60.5c-6.2-.8-27.4-2.7-52.2-2.7-51.6 0-87 31.5-87 89.4v49.9h-58.4v67.6h58.4V480H24.7C11.1 480 0 468.9 0 455.3V56.7C0 43.1 11.1 32 24.7 32h398.5c13.7 0 24.8 11.1 24.8 24.7z"/>
-                </svg>
-                <span>Sign In</span>
-              </a>
+          </form>
+
+          <div class="connectlink-flex">
+            <a class="googlelink">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512" class="googleicon">
+
+                <path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"
+                />
+              </svg>
+              <span>Sign In</span>
+            </a>
+            <a class="facebooklink">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="facebookicon">
+                <path d="M448 56.7v398.5c0 13.7-11.1 24.7-24.7 24.7H309.1V306.5h58.2l8.7-67.6h-67v-43.2c0-19.6 5.4-32.9 33.5-32.9h35.8v-60.5c-6.2-.8-27.4-2.7-52.2-2.7-51.6 0-87 31.5-87 89.4v49.9h-58.4v67.6h58.4V480H24.7C11.1 480 0 468.9 0 455.3V56.7C0 43.1 11.1 32 24.7 32h398.5c13.7 0 24.8 11.1 24.8 24.7z"
+                />
+              </svg>
+              <span>Sign In</span>
+            </a>
           </div>
         </div>
-      </section>
-    </main>
-    <footer>
-      <div class="top-footer">
-        <div class="wrapper">
-          <img src="./assets/brand.svg" />
-          <div class="footer-container">
-            <ul>
-              <li>Home</li>
-              <li>Development</li>
-              <li>Design</li>
-              <li>Sign Up</li>
-            </ul>
-            <ul>
-              <li>Help</li>
-              <li>Resources</li>
-              <li>Terms of Use</li>
-              <li>Privacy Policy</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="bottom-footer">
-        <div class="wrapper">
+    </section>
+  </main>
+  <footer>
+    <div class="top-footer">
+      <div class="wrapper">
+        <img src="./assets/brand.svg" />
+        <div class="footer-container">
           <ul>
-            <li><i>Thanks for stopping by!</i></li>
-            <li>1+ 555-555-5555</li>
-            <li>devcenter@devcenter.com</li>
+            <li>Home</li>
+            <li>Development</li>
+            <li>Design</li>
+            <li>Sign Up</li>
+          </ul>
+          <ul>
+            <li>Help</li>
+            <li>Resources</li>
+            <li>Terms of Use</li>
+            <li>Privacy Policy</li>
           </ul>
         </div>
       </div>
-    </footer>
-  </body>
+    </div>
+    <div class="bottom-footer">
+      <div class="wrapper">
+        <ul>
+          <li>
+            <i>Thanks for stopping by!</i>
+          </li>
+          <li>1+ 555-555-5555</li>
+          <li>devcenter@devcenter.com</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
