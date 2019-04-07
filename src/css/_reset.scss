@@ -7,8 +7,9 @@
 }
 html,
 body {
-  font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Helvetica Neue",
-    "Helvetica", "Arial", sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  font-family: 'SF Pro Text', 'Myriad Set Pro', 'SF Pro Icons', 'Helvetica Neue',
+    'Helvetica', 'Arial', sans-serif;
 }
 body {
   min-height: 100%;
