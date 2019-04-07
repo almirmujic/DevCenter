@@ -13,7 +13,7 @@ DESIGN SECTION OF DESIGN PAGE
   padding-top: 4rem;
   font-weight: 300;
   @media screen and (min-width: 768px) {
-    font-size: 2em;
+    font-size: 2rem;
   }
 }
 
@@ -52,6 +52,7 @@ TOOLS SECTION
 .tools h2 {
   text-align: center;
   font-weight: 200;
+  font-size: 22px;
   @media screen and (min-width: 768px) {
     font-size: 26px;
   }
@@ -75,8 +76,8 @@ TOOLS SECTION
   margin-bottom: 3rem;
   border-top: 8px solid $primary-color;
   padding: 1rem;
-  background-color: #fff;
-  box-shadow: 0px 4px 10px -4px #33333393;
+  background-color: $light;
+  box-shadow: 0px 4px 10px -4px $shadow;
 }
 
 .xd-container img,
@@ -107,7 +108,7 @@ DESIGN TOPICS SECTION
 }
 
 .design-topics p {
-  color: #6f6f6f;
+  color: $gray;
   font-weight: 100;
   @media screen and (min-width: 768px) {
     font-size: 18px;
@@ -123,6 +124,7 @@ DESIGN TOPICS SECTION
 .design-topics h2 {
   margin-bottom: 3rem;
   text-align: center;
+  font-size: 22px;
   @media screen and (min-width: 768px) {
     font-size: 26px;
   }
@@ -136,7 +138,7 @@ DESIGN TOPICS SECTION
   margin-bottom: 4rem;
   h3 {
     &:after {
-      content: "";
+      content: '';
       display: block;
       width: 45px;
       margin-top: 0.5rem;
@@ -223,7 +225,3 @@ DESIGN TOPICS SECTION
     }
   }
 }
-// .design-profiles {
-//   width: 100%;
-//   max-height: 250px;
-// }

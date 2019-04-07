@@ -20,7 +20,7 @@ nav {
   width: 100%;
 }
 
-#brand {
+.brand {
   width: 175px;
   height: 100%;
   margin-left: 0.5rem;
@@ -47,7 +47,7 @@ nav {
   top: 1.7rem;
   width: 40px;
   height: 4px;
-  background-color: #ffffff;
+  background-color: $light;
   border-radius: 25px;
   z-index: 10;
   transform: rotate(0deg);
@@ -59,7 +59,7 @@ nav {
   top: 2.2rem;
   width: 40px;
   height: 4px;
-  background-color: #ffffff;
+  background-color: $light;
   border-radius: 25px;
   z-index: 10;
   transform: rotate(0deg);
@@ -117,7 +117,7 @@ nav {
 
 .slidein-menu ul li a {
   text-decoration: none;
-  color: #fff;
+  color: $light;
   transition: color 0.5s;
   &:hover {
     color: $secondary-color;

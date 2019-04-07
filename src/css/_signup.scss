@@ -14,7 +14,7 @@
   text-align: center;
   font-weight: 400;
   font-size: 2rem;
-  color: #fff;
+  color: $light;
   padding-top: 6rem;
 }
 
@@ -34,7 +34,7 @@
   font-size: 18px;
   font-weight: 200;
   padding: 0 10px;
-  background-color: #fff;
+  background-color: $light;
   border: 2px solid transparent;
   transition: 1s border;
   border-radius: 15px;
@@ -52,20 +52,20 @@
 }
 
 .continuebtn::after {
-  content: "or";
+  content: 'or';
   display: block;
   text-align: center;
   margin-top: 1rem;
   font-size: 1.3rem;
-  color: #fff;
+  color: $light;
 }
 
 .continuelink {
   display: inline-flex;
   justify-content: space-around;
   background: linear-gradient(#9aedde, $primary-color);
-  -webkit-text-fill-color: #fff;
-  box-shadow: 0px 6px 18px -7px #33333383;
+  -webkit-text-fill-color: $light;
+  box-shadow: 0px 6px 18px -7px $shadow;
   border-radius: 15px;
   transition: 0.5s;
   text-decoration: none;
@@ -98,9 +98,8 @@
   display: inline-flex;
   justify-content: space-between;
   background: linear-gradient(#f17469, #db4437);
-  -webkit-text-fill-color: #fff;
-  box-shadow: 0px 6px 18px -7px #33333383;
-  border-radius: 0px;
+  -webkit-text-fill-color: $light;
+  box-shadow: 0px 6px 18px -7px $shadow;
   transition: 0.5s;
   text-decoration: none;
   width: 48%;
@@ -109,7 +108,7 @@
   .googleicon {
     height: 20px;
     flex: 15%;
-    fill: #fff;
+    fill: $light;
     opacity: 0.6;
     transition: 0.6s;
   }
@@ -128,9 +127,8 @@
   display: inline-flex;
   justify-content: space-between;
   background: #3b5998;
-  -webkit-text-fill-color: #fff;
-  box-shadow: 0px 6px 18px -7px #33333383;
-  border-radius: 0px;
+  -webkit-text-fill-color: $light;
+  box-shadow: 0px 6px 18px -7px $shadow;
   transition: 0.5s;
   text-decoration: none;
   width: 48%;
@@ -139,7 +137,7 @@
   .facebookicon {
     height: 20px;
     flex: 15%;
-    fill: #fff;
+    fill: $light;
     opacity: 0.6;
     transition: 0.6s;
   }

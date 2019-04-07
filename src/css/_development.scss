@@ -56,9 +56,9 @@ DEVELOPMENT SECTION OF DEVELOPMENT PAGE
 }
 
 .development::after {
-  content: "";
+  content: '';
   display: block;
-  background-image: url("../assets/launch-arrow.svg");
+  background-image: url('../assets/launch-arrow.svg');
   background-repeat: no-repeat;
   background-position: center;
   transform: rotate(90deg);
@@ -82,7 +82,7 @@ FRONTEND FRAMEWORK SECTION
 
 .frontend-framework {
   &::after {
-    content: "";
+    content: '';
     display: block;
     border: 0.5px solid #d5d5d58e;
     width: 50%;
@@ -115,6 +115,7 @@ FRONTEND FRAMEWORK SECTION
   color: $secondary-color;
   text-align: center;
   font-weight: 200;
+  font-size: 22px;
   @media screen and (min-width: 768px) {
     font-size: 26px;
   }
@@ -205,6 +206,7 @@ BACKEND SECTION
   color: $secondary-color;
   text-align: center;
   font-weight: 200;
+  font-size: 22px;
   @media screen and (min-width: 768px) {
     font-size: 26px;
   }
